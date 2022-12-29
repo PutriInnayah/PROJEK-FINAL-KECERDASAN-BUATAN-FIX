@@ -2,40 +2,7 @@
 
 import os
 
-# uploaded = files.upload()
-# 
-# for fn in uploaded.keys():
-#     print('User uploaded file "{name}"'.format(
-#         name=fn))
 
-# Informasi Dataset:
-#
-# Jenis | Keterangan
-# --- | ---
-# Title | Flowers Recognition
-# Source | [Kaggle](https://www.kaggle.com/alxmamaev/flowers-recognition)
-# Owner | [Alexander Mamaev](https://www.kaggle.com/alxmamaev)
-# License | Unknown
-# Visibility | Public
-# Tags | image data, multiclass classification, plants
-# Usability | 6.3
-# Type | Image
-"""
-
-# melakukan ekstraksi pada file zip
-import zipfile
-
-local_zip = 'flowers-recognition.zip'
-zip_ref = zipfile.ZipFile(local_zip, 'r')
-zip_ref.extractall('/content/flowers-recognition/')
-zip_ref.close()
-
-"""## Data Understanding
-
-# Untuk memahami dataset berupa gambar, saya mendefinisikan terlebih dahulu direktori datasetnya ke dalam sebuah variabel. Selanjutnya tiap kelas atau label yang tersedia dapat diketahui dengan memanggil `os.listdir`
-# """
-
-# Mendefinisikan direktori utama dataset
 base_dir = 'C:/KB/content/dataset_mazda'
 
 print(os.listdir(base_dir))
